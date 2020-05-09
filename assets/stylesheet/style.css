@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --font-size:18px;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  background-image: url("../img/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+body h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.55em 0;
+}
+body .flex {
+  display: flex;
+}
+
+.menu-items {
+  max-width: 360px;
+  margin: 5em auto;
+  height: auto;
+  background: #fff;
+  font-family: "Lato", sans-serif;
+  border-radius: 0.4em;
+}
+.menu-items .menu-ul {
+  padding: 0 2em;
+}
+.menu-items .list-item {
+  padding: 0.5em 0;
+  border-bottom: 0.5px solid #9c9a9a;
+  font-size: 1.1rem;
+}
+.menu-items .li-checkbox-div {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-items .list-checkbox {
+  transform: scale(1.3);
+}
+.menu-items input[type=checkbox]:checked {
+  content: " &#128512;";
+}
+.menu-items label {
+  font-size: 1.25rem;
+  border-radius: 50%;
+}
+.menu-items .menu-content {
+  display: inline-block;
+  width: 85%;
+}
+.menu-items .add-menu {
+  justify-content: center;
+  padding: 1em 0.5em;
+}
+.menu-items .add-menu-input {
+  display: block;
+  width: 65%;
+  font-family: "Lato", sans-serif;
+  padding: 0.5em 0.75em;
+  font-size: var(--font-size);
+  outline: none;
+  border-bottom-left-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+  border: 0.8px solid black;
+}
+.menu-items .btn {
+  background: #ffc600;
+  color: grey;
+  border: 1px solid black;
+  padding: 0.5em 0.8em;
+  outline: none;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
